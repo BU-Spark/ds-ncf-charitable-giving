@@ -2,11 +2,11 @@
 
 ### Members
 
-- Sharon Zou (CS '24)
-- Fiona Mei (CS '24)
-- Tyler Nguyen (CS '24)
-- Esther Choi (CS '24)
-- Justin Lee (CS '24)
+- Sharon Zou (CS '24) szou00@bu.edu
+- Fiona Mei (CS '24) fionamei@bu.edu
+- Tyler Nguyen (CS '24) t198@bu.edu
+- Esther Choi (CS '24) eschoi@bu.edu
+- Justin Lee (CS '24) juslee@bu.edu
 
 ### Project Overview
 
@@ -19,3 +19,5 @@ We used 3 datatsets from CANDID for our project and they can be found here:
 - [Base Bundle](https://docs.google.com/spreadsheets/d/1UiRcT9nkRSALtK3t56blo_pufDSDkYV4/edit?usp=sharing&ouid=112596088674365916651&rtpof=true&sd=true)
 - [Grants Bundle](https://docs.google.com/spreadsheets/d/1UiRcT9nkRSALtK3t56blo_pufDSDkYV4/edit?usp=sharing&ouid=112596088674365916651&rtpof=true&sd=true)
 - [Organization Demographic Bundle](https://docs.google.com/spreadsheets/d/1jVxcB8aVS7-bpkMCp_knAYIFJaB4b7In/edit?usp=sharing&ouid=112596088674365916651&rtpof=true&sd=true)
+
+Link to Final Report Recording: https://drive.google.com/file/d/1BYwCxym3pIIy6K4jkErJAsJx-Tjgh8i3/view?usp=sharing
