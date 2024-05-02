@@ -10,7 +10,7 @@
 
 ### Project Overview
 
-This is our Github for our Spring 2024 CS506 project. We worked with the New Commonwealth Fund (NCF) to understand and visualize trends within philanthropic funding to the Black/LatinX community within Boston over the recent years. Within our deliverables folder, we've added in our report + code for the three milestones throughout the semester, which were Initial Insights Report, Mid-Semester Insights Report, and Final Insights Report. For each of these reports, there is a powerpoint of our findings and a Jupyter Notebook that contains all of the code for creating corresponding visualizations for each finding.
+This is our Github for our Spring 2024 CS506 project. We worked with the New Commonwealth Fund (NCF) to understand and visualize trends within philanthropic funding to the Black/LatinX community within Boston over the recent years. Within our deliverables folder, we've added in our report + code for the three milestones throughout the semester, which were Initial Insights Report, Mid-Semester Insights Report, and Final Insights Report. For each of these reports, there is a PDF file describing updates, a powerpoint of our findings, and a Jupyter Notebook that contains all of the code for creating corresponding visualizations for each finding.
 
 In order to re-run the project, a user would simply have to ensure they have the Notebook opened in Google Colab and add a shortcut for the datasets in their own Google Drive. Or, they can download the notebook and update the path links to whatever is most convenient.
 
