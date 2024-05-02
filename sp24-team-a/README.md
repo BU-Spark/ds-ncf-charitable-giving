@@ -4,13 +4,13 @@ This is a Spring 2024 CS506 project. We worked with NCF(New Commonwealth Fund) t
 
 Regarding the dataset, we used the datasets provided by CANDID, listing below:
 
-[Demographics](https://docs.google.com/spreadsheets/d/1jVxcB8aVS7-bpkMCp_knAYIFJaB4b7In/edit#gid=1394544741)[ ][ ]
-[Base bundle](https://docs.google.com/spreadsheets/d/1UiRcT9nkRSALtK3t56blo_pufDSDkYV4/edit#gid=301886249)[ ][ ]
-[Grants](https://docs.google.com/spreadsheets/d/1UiRcT9nkRSALtK3t56blo_pufDSDkYV4/edit#gid=2110554894)[ ][ ]
+[Demographics](https://docs.google.com/spreadsheets/d/1jVxcB8aVS7-bpkMCp_knAYIFJaB4b7In/edit#gid=1394544741)<br>
+[Base bundle](https://docs.google.com/spreadsheets/d/1UiRcT9nkRSALtK3t56blo_pufDSDkYV4/edit#gid=301886249)
+[Grants](https://docs.google.com/spreadsheets/d/1UiRcT9nkRSALtK3t56blo_pufDSDkYV4/edit#gid=2110554894)
 
 
 Team members:
-Jiayi Yang[ ][ ]
-Xincheng Han[ ][ ]
-Zhuolei Chen[ ][ ]
+Jiayi Yang
+Xincheng Han
+Zhuolei Chen
 
