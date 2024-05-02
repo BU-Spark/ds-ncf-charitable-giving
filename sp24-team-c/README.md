@@ -2,11 +2,11 @@
 
 ### Members
 
-Sharon Zou (CS '24)
-Fiona Mei (CS '24)
-Tyler Nguyen (CS '24)
-Esther Choi (CS '24)
-Justin Lee (CS '24)
+- Sharon Zou (CS '24)
+- Fiona Mei (CS '24)
+- Tyler Nguyen (CS '24)
+- Esther Choi (CS '24)
+- Justin Lee (CS '24)
 
 ### Project Overview
 
