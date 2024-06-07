@@ -111,7 +111,7 @@ extract_data(driver)  # Pass 'driver' as an argument
 
 # Handle pagination by iterating through pages
 try:
-    for page_num in range(2, 100):
+    for page_num in range(2, 450):
         try:
             next_page = WebDriverWait(driver, 10).until(
                 EC.element_to_be_clickable((By.XPATH, f'/html/body/div[6]/div[3]/div[3]/div[3]/div[2]/div/div/div/div[1]/div/div/div[2]/div[2]/div/ul/li[a[text()="{page_num}"]]/a'))
@@ -139,4 +139,5 @@ else:
     print("No data extracted.")
 
 # Clean up by closing the browser
+input("Press Enter to close the browser")
 driver.quit()
