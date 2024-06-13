@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import expected_conditions as EC # type: ignore
 import pandas as pd
 import re
 import time
@@ -34,7 +34,7 @@ def extract_data(driver):
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, '//*[@id="list-screen-tabs-content"]'))
         )
-        rows = driver.find_elements(By.XPATH, '//*[@id="list-screen-tabs-content"]//tr')[2:]  # Skip the first two rows
+        rows = driver.find_elements(By.XPATH, '//*[@id="list-screen-tabs-content"]//tr')[1:]  # Skip the first two rows
 
         for row in rows:
             try:
@@ -75,7 +75,7 @@ def extract_data(driver):
 
 # Initialize the Chrome WebDriver
 driver = webdriver.Chrome()
-driver.get('https://maps.foundationcenter.org/#/list/?subjects=all&popgroups=all&years=all&location=6254926&excludeLocation=0&geoScale=ADM1&layer=geo_area&boundingBox=-139.219,-31.354,135,66.513&gmOrgs=all&recipOrgs=all&tags=all&keywords=&pathwaysOrg=&pathwaysType=&acct=raceequpopup&typesOfSupport=all&transactionTypes=all&amtRanges=all&minGrantAmt=0&maxGrantAmt=0&gmTypes=all&recipTypes=all&minAssetsAmt=0&maxAssetsAmt=0&minGivingAmt=0&maxGivingAmt=0&andOr=0&includeGov=1&custom=all&customArea=all&indicator=&dataSource=oecd&chartType=trends&multiSubject=1&listType=recip&windRoseAnd=undefined&zoom=0')
+driver.get('https://maps.foundationcenter.org/#/list/?subjects=all&popgroups=all&years=2011,2012&location=6254926&excludeLocation=0&geoScale=ADM1&layer=geo_area&boundingBox=-164.61914062499997,18.895892559415024,-35.947265625,58.21702494960191&gmOrgs=all&recipOrgs=all&tags=all&keywords=&pathwaysOrg=&pathwaysType=&acct=raceequpopup&typesOfSupport=all&transactionTypes=all&amtRanges=all&minGrantAmt=0&maxGrantAmt=0&gmTypes=all&recipTypes=all&minAssetsAmt=0&maxAssetsAmt=0&minGivingAmt=0&maxGivingAmt=0&andOr=0&includeGov=1&custom=all&customArea=all&indicator=&dataSource=oecd&chartType=trends&multiSubject=1&listType=gm&windRoseAnd=undefined&zoom=4')
 time.sleep(2)
 
 # Closes the pop-up window
@@ -111,7 +111,7 @@ extract_data(driver)  # Pass 'driver' as an argument
 
 # Handle pagination by iterating through pages
 try:
-    for page_num in range(2, 450):
+    for page_num in range(2, 150):
         try:
             next_page = WebDriverWait(driver, 10).until(
                 EC.element_to_be_clickable((By.XPATH, f'/html/body/div[6]/div[3]/div[3]/div[3]/div[2]/div/div/div/div[1]/div/div/div[2]/div[2]/div/ul/li[a[text()="{page_num}"]]/a'))
@@ -133,11 +133,11 @@ except Exception as e:
 # Save the collected data to a CSV file
 df = pd.DataFrame(all_data)
 if not df.empty:
-    df.to_csv("Grant_Details.csv", index=False)
+    df.to_csv("Grant_Details_2011_2012.csv", index=False)
     print("Data extraction complete and CSV file created.")
 else:
     print("No data extracted.")
 
 # Clean up by closing the browser
-input("Press Enter to close the browser")
+input("Press Enter to close the browser") 
 driver.quit()
